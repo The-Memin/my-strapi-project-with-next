@@ -31,7 +31,7 @@ export async function getHomePage(){
 
 export async function getStrapiData(url: string){
     try {
-        console.log(STRAPI_BASE_URL)
+        console.log("BASE URL: ", STRAPI_BASE_URL)
         const response = await fetch(`${STRAPI_BASE_URL}${url}`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`)
